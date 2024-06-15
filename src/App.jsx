@@ -1,14 +1,12 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./components/MainLayout";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <MainLayout />
+      <Routes></Routes>
+    </BrowserRouter>
   );
 };
 
