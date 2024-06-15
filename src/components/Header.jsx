@@ -1,11 +1,11 @@
-import logo from "../assets/Logo.png";
+import { Logo } from "../assets/assets";
 const Header = () => {
   const nav = ["Home", "Firms", "HR-Connect", "Employee", "About", "Blog"];
   return (
     <div>
       <div className="py-4 bg-slate-950">
         <nav className="mx-5 flex items-center justify-between">
-          <img src={logo} alt="" />
+          <img src={Logo} alt="" />
           <ul className="flex gap-3 my-3 text-blue-400 cursor-pointer">
             {nav.map((navItem, index) => {
               console.log(navItem);
