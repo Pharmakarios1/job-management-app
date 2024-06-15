@@ -1,11 +1,15 @@
-import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
-function App() {
+const App = () => {
   return (
     <>
-      <p className="text-green-600 blessed">Hello</p>
+      <Header />
+      <Hero />
+      <Footer />
     </>
   );
-}
+};
 
 export default App;
