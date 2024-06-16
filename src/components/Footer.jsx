@@ -2,7 +2,7 @@ import { Logo } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-800">
+    <div className="bg-slate-800 absolute bottom-0 w-full">
       <div className=" py-5 px-5 flex justify-between">
         <div className="Logo">
           <img src={Logo} alt="" />
