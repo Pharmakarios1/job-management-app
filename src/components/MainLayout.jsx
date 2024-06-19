@@ -2,6 +2,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Footer from "./Footer";
 import Login from "./Login";
+import Job from "./Job";
 
 const MainLayout = () => {
   return (
@@ -9,6 +10,7 @@ const MainLayout = () => {
       <Login />
       <Header />
       <Hero />
+      <Job />
       <Footer />
     </div>
   );
