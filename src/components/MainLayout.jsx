@@ -3,10 +3,11 @@ import { Login, Nav, Job, Footer } from "./index";
 import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import HR from "../pages/HR";
+import Auth from "../pages/Auth";
 
 const MainLayout = () => {
   return (
-    <div className="h-[300vh] relative flex flex-col flex-wrap">
+    <div className="min-h-screen relative flex flex-col flex-wrap">
       <Login />
       <Nav />
       <Routes>
@@ -14,6 +15,7 @@ const MainLayout = () => {
         <Route path="/Job" element={<Job />} Route />
         <Route path="/human-resources" element={<HR />} Route />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/sign-up" element={<Auth />} />
       </Routes>
       <Footer />
     </div>

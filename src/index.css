@@ -5,10 +5,12 @@
 
 body{
     font-family: "Roboto", sans-serif;
+    color: black;
+    
 }
 
 .active{
-    background-color:#009ad5;
+    background-color:#060641;
     padding: 3px 5px;
     border-radius: 5px;
 }
