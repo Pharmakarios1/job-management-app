@@ -2,14 +2,16 @@ import { Link, NavLink } from "react-router-dom";
 import { Logo } from "../assets/assets";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { IoClose } from "react-icons/io5";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <nav className="py-4 bg-blue-950 border-b  border-blue-500 sticky top-0 z-10">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:ml-5 sm:mr-6 sm:items-center">
-          <div className="flex justify-between">
+          <div className="flex justify-between ml-6">
             <Link to="/">
               <img
                 src={Logo}
@@ -18,12 +20,19 @@ const Nav = () => {
               />
             </Link>
             <div>
-              <FaBars
-                className="text-white text-2xl sm:hidden mr-4 cursor-pointer"
-                onClick={() => {
-                  setMenuOpen(!menuOpen);
-                }}
-              />
+              {menuOpen ? (
+                <IoClose
+                  onClick={() => setMenuOpen(!menuOpen)}
+                  className="text-white text-2xl sm:hidden mr-4 cursor-pointer"
+                />
+              ) : (
+                <FaBars
+                  className="text-white text-2xl sm:hidden mr-4 cursor-pointer"
+                  onClick={() => {
+                    setMenuOpen(!menuOpen);
+                  }}
+                />
+              )}
             </div>
           </div>
           <ul

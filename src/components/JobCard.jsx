@@ -1,21 +1,17 @@
-import { FaFingerprint } from "react-icons/fa";
-import { Logo } from "../assets/assets";
-
-const JobCard = ({ children }) => {
+const JobCard = ({ img, title, description, Salary, button }) => {
   return (
     <div>
-      <div className="w-[100%] min-h-10 bottom-2 rounded-xl p-4 border-slate-950 bg-slate-500">
-        <div className="flex flex-col items-center">
+      <div className="w-[100%] h-[350px] bottom-2 rounded-xl p-4 border-slate-950 bg-slate-500">
+        <div className="flex flex-col">
+          <div className="">{img}</div>
           <div>
-            <img src={Logo} alt="Logo-ads" className="mb-4" />
+            <h3 className="text-slate-950 text-lg font-bold">{title}</h3>
+            <p className="text-sm">{Salary}</p>
+            <p>{description}</p>
           </div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi qui
-            nemo autem? Voluptate rem, architecto saepe distinctio consequatur
-            hic repudiandae voluptatibus debitis numquam iusto inventore amet
-            nisi nostrum, corporis tenetur.
-          </p>
-          <FaFingerprint />
+          <button className="bg-slate-950 px-2 py-1 text-white font-bold rounded-lg">
+            Details
+          </button>
         </div>
       </div>
     </div>

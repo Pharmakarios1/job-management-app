@@ -2,7 +2,7 @@ import { Logo } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-800 w-full ">
+    <div className="bg-slate-800 w-full sm:pr-36 sm:pl-36 ">
       <div className=" py-5 px-2 flex justify-between flex-col gap-4 sm:flex-row">
         <div className="flex justify-between gap-4">
           <div className="Logo">
@@ -25,7 +25,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col sm:flex-row sm:gap-8">
           <ul className="text-white">
             <li>Germany</li>
             <li>Uk</li>
