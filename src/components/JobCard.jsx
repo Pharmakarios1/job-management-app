@@ -1,15 +1,15 @@
-const JobCard = ({ img, title, description, Salary, button }) => {
+const JobCard = ({ img, title, description, Salary }) => {
   return (
-    <div>
-      <div className="w-[100%] h-[350px] bottom-2 rounded-xl p-4 border-slate-950 bg-slate-500">
-        <div className="flex flex-col">
-          <div className="">{img}</div>
-          <div>
-            <h3 className="text-slate-950 text-lg font-bold">{title}</h3>
-            <p className="text-sm">{Salary}</p>
-            <p>{description}</p>
-          </div>
-          <button className="bg-slate-950 px-2 py-1 text-white font-bold rounded-lg">
+    <div className="card bg-base-100 w-96 shadow-xl h-[350] flex">
+      <figure>
+        <img src={img} alt="Shoes" />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title text-xl">{title}</h2>
+        <p className="text-[12px] text-slate-400">{Salary}</p>
+        <p className="text-sm">{description}</p>
+        <div className="card-actions justify-end">
+          <button className="bg-slate-700 text-white p-1 rounded-md">
             Details
           </button>
         </div>

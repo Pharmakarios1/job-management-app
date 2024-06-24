@@ -1,7 +1,5 @@
-import React from "react";
-
 const Testimonial = () => {
-  return <div>Testimonial</div>;
+  return <div>Testimonials</div>;
 };
 
 export default Testimonial;
