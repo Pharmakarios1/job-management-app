@@ -4,7 +4,7 @@ import JobCard from "../components/JobCard";
 const Job = () => {
   return (
     <>
-      <div className="bg-blue-100 min-h-[100vh] p-4 flex flex-col">
+      <div className="bg-blue-100 min-h-[100vh] p-2 flex flex-col justify-center">
         <div className="flex items-center">
           <label className="input input-bordered border-none flex items-center gap-2 m-4 sm:w-[25rem] text-white">
             <input type="text" className="grow" placeholder="Search" />
