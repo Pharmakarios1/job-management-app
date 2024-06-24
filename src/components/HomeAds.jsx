@@ -36,7 +36,7 @@ const HomeAds = () => {
         />
       </div>
       {showmore ? (
-        <div className="flex flex-col pt-3 gap-2 items-center sm:flex-row ">
+        <div className="flex flex-col pt-3 gap-2 justify-center sm:flex-row sm:flex-wrap">
           <JobCard
             img="https://cdn.prod.website-files.com/5b651f8b5fc94c4e27470a81/622227fd2ce3cc0455a88166_blog-gamedev-fullsize-p-2000.png"
             title="Game Dev"
@@ -67,7 +67,7 @@ const HomeAds = () => {
           onClick={() => {
             setShowmore(!showmore);
           }}
-          className=" bg-slate-950 text-white rounded-xl mt-2 p-1 w-full sm:w-36"
+          className=" bg-slate-950 text-white rounded-xl mt-3 p-1 sm:mr-12 w-full sm:w-36"
         >
           {showmore ? "Show Less" : "Show More"}
         </button>
