@@ -1,6 +1,6 @@
 const JobCard = ({ img, title, description, Salary }) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-xl h-[350] flex">
+    <div className="card bg-base-100 w-[22rem] shadow-xl h-[350] flex">
       <figure>
         <img src={img} alt="Shoes" />
       </figure>
