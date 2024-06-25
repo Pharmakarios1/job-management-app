@@ -1,4 +1,4 @@
-const JobCard = ({ img, title, description, Salary }) => {
+const JobCard = ({ img, title, description, Salary, location }) => {
   return (
     <div className="card bg-base-100 w-full sm:w-[22rem] shadow-xl h-[350] flex">
       <figure>
@@ -9,6 +9,9 @@ const JobCard = ({ img, title, description, Salary }) => {
         <p className="text-[12px] text-slate-400">{Salary}</p>
         <p className="text-sm">{description}</p>
         <div className="card-actions justify-end">
+          <div className="">
+            <p>{location}</p>
+          </div>
           <button className="bg-slate-700 text-white p-1 rounded-md">
             Details
           </button>

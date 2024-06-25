@@ -23,7 +23,7 @@ const Footer = () => {
       </nav>
       <form>
         <h6 className="footer-title">Newsletter</h6>
-        <fieldset className="form-control w-80">
+        <fieldset className="form-control w-[22rem">
           <label className="label">
             <span className="label-text">Enter your email address</span>
           </label>
@@ -31,9 +31,9 @@ const Footer = () => {
             <input
               type="text"
               placeholder="johndoe@gmail.com"
-              className="input input-bordered join-item text-white"
+              className="input input-bordered join-item text-white w-44 sm:w-52"
             />
-            <button className="bg-slate-950 px-2 text-white join-item">
+            <button className="bg-slate-950 px-1 sm:px-2 text-white join-item text-sm">
               Subscribe
             </button>
           </div>
