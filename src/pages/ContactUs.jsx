@@ -3,7 +3,7 @@ import { CiLocationOn } from "react-icons/ci";
 const ContactUs = () => {
   return (
     <>
-      <div className="bg-blue-100 min-h-[100vh] py-4 px-4 flex flex-col items-center">
+      <div className="bg-blue-100 min-h-screen py-4 px-4 flex flex-col items-center">
         <h5>Contact us</h5>
 
         <div className="flex flex-col ">

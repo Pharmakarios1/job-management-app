@@ -19,22 +19,12 @@ const Login = () => {
         <select
           name="lang"
           id="lang"
-          className="bg-slate-800 text-white p-[2px] rounded-lg"
+          className="bg-blue-01327080808 text-white p-[2px] rounded-lg outline-none"
         >
           <option value="English">ENG</option>
           <option value="france">FRA</option>
           <option value="indian">IND</option>
         </select>
-
-        {/* <button className=" rounded-xl flex items-center justify-center mt-1 mb-1 w-10 h-6 border-1 text-[12px] font-bold border-blue-500 ">
-          ENG
-        </button>
-        <button className=" rounded-xl flex items-center justify-center mt-1 mb-1 w-10 h-6 border-1 text-[12px] font-bold border-blue-500">
-          FRA
-        </button>
-        <button className=" rounded-xl flex items-center justify-center mt-1 mb-1 w-10 h-6 border-1 text-[12px] font-bold border-blue-500">
-          IND
-        </button> */}
       </div>
     </div>
   );

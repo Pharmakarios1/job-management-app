@@ -1,11 +1,10 @@
-import { useState } from "react";
 const Auth = () => {
   // const [signIn, setSignin] = useState(signin);
   return (
     <>
-      <div className="bg-blue-100 min-h-[100vh] py-4 px-4 flex flex-col items-center">
+      <div className="bg-blue-100 min-h-screen py-4 px-4 flex flex-col items-center">
         <h4 className="text-slate-500"></h4>
-        <div className=" rounded-xl bg-blue-200 p-4 shadow-2xl w-[20rem]">
+        <div className=" rounded-xl bg-blue-200 p-4 shadow-2xl w-[23rem]">
           <p className="text-slate-950 font-bold">Welcome!</p>
           <form action="" className="flex flex-col gap-3">
             {/* <input
