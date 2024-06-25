@@ -1,36 +1,58 @@
-import { FaArrowRight } from "react-icons/fa";
-import { Logo } from "../assets/assets";
+import { useState } from "react";
 const Auth = () => {
+  // const [signIn, setSignin] = useState(signin);
   return (
-    <div className="flex items-center justify-center mt-4 z-[-10]">
-      <div className="div flex h-[65vh] w-[70%] border-2 border-slate-800 py-4 justify-center bg-slate-500 rounded-lg sm:w-[35%]">
-        <form action="" className="flex flex-col gap-2 items-center">
-          <div>
-            <img src={Logo} alt="" className="" />
-          </div>
-          <input
-            type="email"
-            placeholder="Email"
-            className=" mt-10 w-[250px] p-1 text-black rounded-lg border-2 border-slate-950 outline-none placeholder:pl-1"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            className="rounded-lg w-[250px] p-1 border-2 border-slate-950 outline-none placeholder:pl-1"
-          />
-          <button
-            type="submit"
-            className="w-[100%] bg-slate-950 rounded-lg p-2 text-white font-bold mt-3 flex gap-2 items-center justify-center"
-          >
-            Log in
-            <FaArrowRight />
-          </button>
-          <p className="text-center">
-            Don't have an account <br /> <b>Sign up</b>
-          </p>
-        </form>
+    <>
+      <div className="bg-blue-100 min-h-[100vh] py-4 px-4 flex flex-col items-center">
+        <h4 className="text-slate-500"></h4>
+        <div className=" rounded-xl bg-blue-200 p-4 shadow-2xl w-[20rem]">
+          <p className="text-slate-950 font-bold">Welcome!</p>
+          <form action="" className="flex flex-col gap-3">
+            {/* <input
+              type="text"
+              className="bg-blue-100  p-1 rounded-md placeholder:p-1 w-full outline-none"
+              placeholder="Full Name"
+              required
+            /> */}
+            <input
+              type="text"
+              className="bg-blue-100  p-1 rounded-md placeholder:p-1 w-full outline-none"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              className="bg-blue-100 w-full p-1 rounded-md placeholder:p-1 outline-none"
+              placeholder="Password"
+              required
+            />
+            <div className="flex gap-1 ">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                className="mb-3"
+              />
+              <p className="text-[11px] text-slate-700">
+                I accept all the requirements of using this app!
+              </p>
+            </div>
+            <button
+              type="submit"
+              className="py-1 bg-slate-950 text-white font-bold rounded-md"
+            >
+              Login
+            </button>
+            <p className="text-sm text-center">
+              Dont have account{" "}
+              <span className="text-slate-950 font-bold cursor-pointer">
+                Sign Up
+              </span>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

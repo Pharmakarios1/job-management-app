@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="py-4 bg-blue-950 border-b  border-blue-500 sticky top-0 z-10">
+      <nav className="py-4 bg-blue-950 border-b  border-blue-500 sticky top-0 z-10 transition-all duration-900 delay-1000">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:ml-5 sm:mr-6 sm:items-center">
           <div className="flex justify-between ml-6">
             <Link to="/">

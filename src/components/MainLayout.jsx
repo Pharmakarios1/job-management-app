@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Login, Nav, Job, Footer } from "./index";
+import { Login, Nav, JobListing, Footer } from "./index";
 import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import HR from "../pages/HR";
@@ -13,7 +13,7 @@ const MainLayout = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Job" element={<Job />} Route />
+        <Route path="/Job" element={<JobListing />} Route />
         <Route path="/human-resources" element={<HR />} Route />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/sign-up" element={<Auth />} />

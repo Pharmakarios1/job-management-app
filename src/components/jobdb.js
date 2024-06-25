@@ -128,7 +128,7 @@ export const Jobs = [
     },
   },
   {
-    id: "3",
+    id: "9",
     title: " Data Scientist",
     img: "https://datafloq.com/wp-content/uploads/2022/12/What-Is-Data-Science-And-How-To-Become-A-Data-Scientist-750x420.jpg",
     type: "Full-Time",
