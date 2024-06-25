@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import HR from "../pages/HR";
 import Auth from "../pages/Auth";
+import JobDetails from "../pages/JobDetails";
 
 const MainLayout = () => {
   return (
@@ -16,6 +17,7 @@ const MainLayout = () => {
         <Route path="/human-resources" element={<HR />} Route />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/sign-up" element={<Auth />} />
+        <Route path="/job-details/" element={<JobDetails />} />
       </Routes>
       <Footer />
     </div>

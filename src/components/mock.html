@@ -1,10 +1,7 @@
-<div
-  className="bg-blue-100 min-h-[100vh] py-4 px-2 flex flex-col justify-center"
->
+<div className="bg-blue-100 min-h-[100vh] py-4 px-2 flex flex-col justify-center">
   <div className="flex items-center">
     <label
-      className="input input-bordered border-none flex items-center gap-2 m-4 sm:w-[25rem] text-white"
-    >
+      className="input input-bordered border-none flex items-center gap-2 m-4 sm:w-[25rem] text-white">
       <input type="text" className="grow" placeholder="Search" />
       <CiSearch className="text-white text-2xl cursor-pointer" />
     </label>
@@ -12,6 +9,20 @@
   </div>
 
   <div
-    className="flex flex-col pt-3 gap-2 justify-center sm:flex-row sm:flex-wrap"
-  ></div>
+    className="flex flex-col pt-3 gap-2 justify-center sm:flex-row sm:flex-wrap">
+   
+  </div>
+</div>
+
+
+
+
+<div className="flex sm:justify-end">
+  <button
+    onClick={() => {
+      setShowmore(!showmore);
+    }}
+    className=" bg-slate-950 text-white rounded-xl mt-3 p-1 sm:mr-12 w-full sm:w-36">
+    {showmore ? "Show Less" : "Show More"}
+  </button>
 </div>
