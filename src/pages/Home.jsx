@@ -1,11 +1,11 @@
-import { Hero } from "../components";
-import HomeAds from "../components/HomeAds";
+import { Hero, JobListing } from "../components";
+// import HomeAds from "../components/HomeAds";
 import Testimonial from "../components/Testimonial";
 const Home = () => {
   return (
     <div>
       <Hero />
-      <HomeAds />
+      <JobListing isHome={true} />
       <Testimonial />
     </div>
   );

@@ -43,7 +43,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/"
-                className="no-underline text-white font-bold text-xl"
+                className="no-underline text-white font-bold lg:text-xl"
               >
                 Home
               </NavLink>
@@ -51,7 +51,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/human-resources"
-                className="no-underline text-white font-bold text-xl"
+                className="no-underline text-white font-bold lg:text-xl"
               >
                 Human Resources
               </NavLink>
@@ -59,7 +59,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/Job"
-                className="no-underline text-white font-bold text-xl"
+                className="no-underline text-white font-bold lg:text-xl"
               >
                 Jobs
               </NavLink>
@@ -67,7 +67,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/contact-us"
-                className="no-underline text-white font-bold text-xl"
+                className="no-underline text-white font-bold lg:text-xl"
               >
                 Constact us
               </NavLink>
