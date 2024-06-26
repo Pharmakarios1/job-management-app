@@ -111,6 +111,20 @@
                 "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasaccusantium numquam illum velit eius in repellat, officia illo magnam",
                 "email":"newtek@contact.com"
             }
+        },
+        {
+            "id":"9",
+            "title":"Senior React Developer",
+            "img":"https://thumbor.forbes.com/thumbor/fit-in/1290x/https://www.forbes.com/advisor/wp-content/uploads/2022/06/software_engineer.jpeg.jpg",
+            "type":"Full-Time",
+            "description":"we are  seeking a talented Front-end Developer to join our team in Bonston, MA. The ideal candidate will have strong skills in HTML, CSS, and Javascript, with experience working with modern Javascript frameworks such as React or Angular ",
+            "location":"Bonston, MA",
+            "Salary":"$70K- $80K",
+            "company":{
+                "name":"NewTek Solutions",
+                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasaccusantium numquam illum velit eius in repellat, officia illo magnam",
+                "email":"newtek@contact.com"
+            }
         }
     ]
 

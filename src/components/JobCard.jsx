@@ -9,7 +9,7 @@ const JobCard = ({ img, title, description, Salary, location, type }) => {
   }
 
   return (
-    <div className="card bg-base-100 w-full sm:w-[22rem] shadow-2xl flex">
+    <div className="card bg-base-100 w-[22rem] sm:w-[18.5rem] shadow-2xl flex">
       <figure className="h-40 w-full">
         <img src={img} alt="img-alt" />
       </figure>
