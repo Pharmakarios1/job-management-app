@@ -41,27 +41,33 @@ const Nav = () => {
             }`}
           >
             <li>
-              <NavLink to="/" className="no-underline text-white font-bold">
+              <NavLink
+                to="/"
+                className="no-underline text-white font-bold text-xl"
+              >
                 Home
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/human-resources"
-                className="no-underline text-white font-bold"
+                className="no-underline text-white font-bold text-xl"
               >
                 Human Resources
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Job" className="no-underline text-white font-bold">
+              <NavLink
+                to="/Job"
+                className="no-underline text-white font-bold text-xl"
+              >
                 Jobs
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/contact-us"
-                className="no-underline text-white font-bold"
+                className="no-underline text-white font-bold text-xl"
               >
                 Constact us
               </NavLink>

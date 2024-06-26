@@ -143,4 +143,52 @@ export const Jobs = [
       email: "newtek@contact.com",
     },
   },
+  {
+    id: "10",
+    title: "Tensor Flow Engineer",
+    img: "https://datafloq.com/wp-content/uploads/2022/12/What-Is-Data-Science-And-How-To-Become-A-Data-Scientist-750x420.jpg",
+    type: "Full-Time",
+    description:
+      "we are  seeking a talented engineer highly skilled in the use of Tensor Flow in both Javascript and python libraries to join our team in Bonston, MA. The ideal candidate will have strong skills in HTML, CSS, and Javascript, with experience working with modern Javascript frameworks such as React or Angular ",
+    location: "Bonston, MA",
+    Salary: "$70K- $80K",
+    company: {
+      name: "NewTek Solutions",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasaccusantium numquam illum velit eius in repellat, officia illo magnam",
+      email: "newtek@contact.com",
+    },
+  },
+  {
+    id: "9",
+    title: "PHP Backend Engineer",
+    img: "https://datafloq.com/wp-content/uploads/2022/12/What-Is-Data-Science-And-How-To-Become-A-Data-Scientist-750x420.jpg",
+    type: "Full-Time",
+    description:
+      "we are  seeking a talented PHP Developer to join our team in Bonston, MA. The ideal candidate will have strong skill in PHP dev with minors in html, css and js, with experience working with modern Javascript frameworks such as React or Angular ",
+    location: "Bonston, MA",
+    Salary: "$70K- $80K",
+    company: {
+      name: "NewTek Solutions",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasaccusantium numquam illum velit eius in repellat, officia illo magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasaccusantium numquam illum velit eius in repellat, officia illo magnam",
+      email: "newtek@contact.com",
+    },
+  },
+  {
+    id: "9",
+    title: " Data Scientist",
+    img: "https://datafloq.com/wp-content/uploads/2022/12/What-Is-Data-Science-And-How-To-Become-A-Data-Scientist-750x420.jpg",
+    type: "Full-Time",
+    description:
+      "we are  seeking a talented Front-end Developer to join our team in Bonston, MA. The ideal candidate will have strong skills in HTML, CSS, and Javascript, with experience working with modern Javascript frameworks such as React or Angular ",
+    location: "Bonston, MA",
+    Salary: "$70K- $80K",
+    company: {
+      name: "NewTek Solutions",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasaccusantium numquam illum velit eius in repellat, officia illo magnam",
+      email: "newtek@contact.com",
+    },
+  },
 ];

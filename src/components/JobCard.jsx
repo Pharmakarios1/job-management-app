@@ -1,5 +1,13 @@
+import { useState } from "react";
+import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const JobCard = ({ img, title, description, Salary, location, type }) => {
+  const [fullDescription, setFullDescription] = useState(false);
+
+  if (!fullDescription) {
+    description = description.substring(0, 80) + " ... ";
+  }
+
   return (
     <div className="card bg-base-100 w-full sm:w-[22rem] shadow-2xl flex">
       <figure className="h-40 w-full">
@@ -11,14 +19,23 @@ const JobCard = ({ img, title, description, Salary, location, type }) => {
           <p className="text-[12px] text-slate-400">{Salary}</p>
           <p className="text-[12px] text-slate-400 font-bold">{type}</p>
         </div>
-        <p className="text-sm">{description}</p>
+        <p className="text-sm">
+          {`${description}`}
+          <button
+            className="text-slate-500 font-bold"
+            onClick={() => setFullDescription(!fullDescription)}
+          >
+            {fullDescription ? "Less" : " Read more"}
+          </button>
+        </p>
         <div className="card-actions justify-between p-0">
-          <div className="text-sm text-slate-500">
+          <div className="text-sm text-slate-500 flex">
+            <CiLocationOn className="text-red-500 mr-1 pt-1 text-lg" />
             <p>{location}</p>
           </div>
           <Link to="/job-details">
             <button className="bg-slate-700 text-white p-1 rounded-md">
-              Details
+              Job Details
             </button>
           </Link>
         </div>
