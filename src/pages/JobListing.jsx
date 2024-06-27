@@ -24,7 +24,7 @@ const Job = ({ isHome = false }) => {
     <>
       <div className="bg-blue-100 min-h-screen py-4 flex flex-col items-center">
         {isHome ? (
-          <h2 className="text-center sm:text-left text-slate-950 font-bold mt-2 border-b-2 border-slate-300">
+          <h2 className="text-center sm:text-left text-slate-950 font-bold mt-2 border-b-2 border-slate-400">
             Recent Jobs
           </h2>
         ) : (
