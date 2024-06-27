@@ -13,11 +13,11 @@ const MainLayout = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Job" element={<JobListing />} Route />
+        <Route path="/Jobs" element={<JobListing />} Route />
         <Route path="/human-resources" element={<HR />} Route />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/sign-up" element={<Auth />} />
-        <Route path="/job-details/" element={<JobDetails />} />
+        <Route path="/Jobs/:id" element={<JobDetails />} />
       </Routes>
       <Footer />
     </div>

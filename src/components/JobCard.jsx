@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
-const JobCard = ({ img, title, description, Salary, location, type }) => {
+
+const JobCard = ({ img, title, description, Salary, location, type, id }) => {
   const [fullDescription, setFullDescription] = useState(false);
 
   if (!fullDescription) {
@@ -33,7 +34,7 @@ const JobCard = ({ img, title, description, Salary, location, type }) => {
             <CiLocationOn className="text-red-500 mr-1 pt-1 text-lg" />
             <p>{location}</p>
           </div>
-          <Link to="/job-details">
+          <Link to={`/Jobs/${id}`}>
             <button className="bg-slate-700 text-white p-1 rounded-md">
               Job Details
             </button>

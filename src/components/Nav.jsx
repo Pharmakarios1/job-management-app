@@ -58,7 +58,7 @@ const Nav = () => {
             </li>
             <li>
               <NavLink
-                to="/Job"
+                to="/Jobs"
                 className="no-underline text-white font-bold lg:text-xl"
               >
                 Jobs
