@@ -5,6 +5,7 @@ import ContactUs from "../pages/ContactUs";
 import HR from "../pages/HR";
 import Auth from "../pages/Auth";
 import JobDetails from "../pages/JobDetails";
+import Error from "../pages/Error";
 
 const MainLayout = () => {
   return (
@@ -13,11 +14,12 @@ const MainLayout = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Jobs" element={<JobListing />} Route />
         <Route path="/human-resources" element={<HR />} Route />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/sign-up" element={<Auth />} />
+        <Route path="/Jobs" element={<JobListing />} Route />
         <Route path="/Jobs/:id" element={<JobDetails />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </div>

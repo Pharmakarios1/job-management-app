@@ -13,7 +13,6 @@ const Job = ({ isHome = false }) => {
       const res = await fetch("http://localhost:8000/Jobs/");
       const jobdata = await res.json();
       setBackend(jobdata);
-      console.log(jobdata);
     };
     fetchData();
   }, []);
@@ -42,6 +41,7 @@ const Job = ({ isHome = false }) => {
             return (
               <JobCard
                 key={items.id}
+                id={items.id}
                 title={items.title}
                 type={items.type}
                 img={items.img}
